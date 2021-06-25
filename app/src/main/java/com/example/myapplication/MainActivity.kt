@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
+
 class MainActivity : AppCompatActivity() {
     val validUsername = "joel"
     val validPassword = "joel"
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         usernameInput = findViewById(R.id.usernameInput)
         passwordInput = findViewById(R.id.passwordInput)
         submitButton = findViewById(R.id.submitButton)
-        submitButton.setOnClickListener { 
+        submitButton.setOnClickListener {
             val username = usernameInput.text.toString()
             val password = passwordInput.text.toString()
             login(username, password)
